@@ -1,5 +1,5 @@
 # Angular 2 with WebPack
-Angular (Version: 2) with Webpack
+Angular (Version: 2) with Webpack module bundler
 
 
 # Run the commands
