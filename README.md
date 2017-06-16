@@ -1,11 +1,11 @@
 # angular2-webpack
 Angular 2 with WebPack
 
-# Run the below command
+# Run the below command.
 
-npm install
-npm run build
-npm run serve
+‘npm install’.
+‘npm run build’.
+‘npm run serve’.
 
-# Then browse,
-http://localhost:8080/
+# Browse
+‘http://localhost:8080/'
