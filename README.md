@@ -1,4 +1,6 @@
 # Angular 2 with WebPack
+Angular (Version: 2) with Webpack
+
 
 # Run the commands
 
@@ -9,4 +11,4 @@
 `npm run serve`
 
 # Browse
-‘http://localhost:8080/'
+http://localhost:8080/
