@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outDir": "dist/",
+        "rootDir": "src/",
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}
