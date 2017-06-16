@@ -1,7 +1,6 @@
-# angular2-webpack
-Angular 2 with WebPack
+# Angular 2 with WebPack
 
-# Run the below command.
+# Run the commands
 
 `npm install`
 
