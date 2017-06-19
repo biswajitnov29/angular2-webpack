@@ -6,9 +6,7 @@ Angular (Version: 2) with Webpack module bundler
 
 `npm install`
 
-`npm run build`
-
-`npm run serve`
+`npm start`
 
 # Browse
 http://localhost:8080/
