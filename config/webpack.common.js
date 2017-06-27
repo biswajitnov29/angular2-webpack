@@ -3,6 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
 
+
 module.exports = {
   entry: {
     'polyfills': './src/polyfills.ts',
@@ -11,7 +12,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js','.less','.css']
   },
 
   module: {
@@ -33,10 +34,15 @@ module.exports = {
         exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
       },
+      // {
+      //   test: /\.css$/,
+      //   include: helpers.root('src', 'app'),
+      //   loader: 'raw-loader'
+      // },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw-loader'
+        loader: 'style-loader!css-loader!less-loader'
       }
     ]
   },
@@ -56,6 +62,13 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: 'src/index.html'
+    }),
+
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery',
+      Tether: 'tether'
     })
   ]
 };

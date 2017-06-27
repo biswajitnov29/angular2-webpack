@@ -1,5 +1,25 @@
-<main>
-  <h1>Hello from Angular App with Webpack</h1>
+<div class="fluid-container">
+  <nav class="navbar navbar-toggleable-md navbar-light navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand" href="#">UI Tech Refresh </a>
 
-  <img src="../assets/images/angular.png">
-</main>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto pull-right">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin/list" routerLinkActive="active">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="fluid-container inner-container">
+    <router-outlet></router-outlet>
+    <!---->
+    
+  </div>
+</div>

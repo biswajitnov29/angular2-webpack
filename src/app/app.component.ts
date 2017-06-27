@@ -5,6 +5,8 @@ import '../assets/css/styles.css';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styles: [
+    require('./app.component.less').toString()
+  ]
 })
 export class AppComponent { }
